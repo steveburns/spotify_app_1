@@ -3,6 +3,7 @@ package com.myhub.spotifystreamer;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,7 +24,7 @@ import butterknife.InjectView;
 
  */
 
-public class PlayerActivity extends ActionBarActivity {
+public class PlayerActivity extends AppCompatActivity {
 
     @InjectView(R.id.artistTextView) TextView artistTextView;
     @InjectView(R.id.albumTextView) TextView albumTextView;
