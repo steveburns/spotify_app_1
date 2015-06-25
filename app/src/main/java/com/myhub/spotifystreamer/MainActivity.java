@@ -29,6 +29,7 @@ import kaaes.spotify.webapi.android.SpotifyApi;
 import kaaes.spotify.webapi.android.SpotifyService;
 import kaaes.spotify.webapi.android.models.Artist;
 import kaaes.spotify.webapi.android.models.ArtistsPager;
+import retrofit.RetrofitError;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         }
                     }
-                } catch (Exception e) {
+                } catch (RetrofitError e) {
                     Log.e("Exception logged", e.getMessage());
                 }
             }

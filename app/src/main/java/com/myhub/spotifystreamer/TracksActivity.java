@@ -27,6 +27,7 @@ import kaaes.spotify.webapi.android.SpotifyApi;
 import kaaes.spotify.webapi.android.SpotifyService;
 import kaaes.spotify.webapi.android.models.Track;
 import kaaes.spotify.webapi.android.models.Tracks;
+import retrofit.RetrofitError;
 
 
 public class TracksActivity extends AppCompatActivity {
@@ -168,7 +169,7 @@ public class TracksActivity extends AppCompatActivity {
                             }
                         }
                     }
-                } catch (Exception e) {
+                } catch (RetrofitError e) {
                     Log.e("Exception logged", e.getMessage());
                 }
             }
